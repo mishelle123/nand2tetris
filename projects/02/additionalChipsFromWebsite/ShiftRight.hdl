@@ -1,0 +1,13 @@
+CHIP ShiftRight
+{
+     
+   IN in[16];
+     
+   OUT out[16];
+     
+     
+   PARTS:
+   Mux16(a[15]=false, a[0..14]=in[1..15], b[15]=true, b[0..14]=in[1..15], sel=in[15], out=out);
+
+
+}

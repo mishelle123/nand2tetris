@@ -1,0 +1,16 @@
+
+/**
+ * 2 complement
+ * the bits are inverted by using the bitwise not
+ * operation, the value 1 is then added to the resulting
+ * value 
+ */
+
+CHIP Complement16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+    Not16(in=in, out=notin);
+    Inc16(in=notin, out=out);
+}

@@ -1,0 +1,29 @@
+mishelle, jjgold
+
+
+                           Project 1 - A tar File
+                           ----------------------- 
+  
+
+Submitted Files
+---------------
+README - This file.
+Not.hdl - Not gate.
+And.hdl - And gate.
+Or.hdl - Or gate.
+Xor.hdl - Xor gate.
+Mux.hdl - Mux gate.
+DMux.hdl - DMux gate.
+Not16 - 16-bit Not.
+And16 - 16-bit And.
+Or16 - 16-bit Or.
+Mux16 - 16-bit multiplexor.
+Or8Way - Or(in0,in1,...,in7).
+Mux4Way16 - 16-bit/4-way mux.
+Mux8Way16 - 16-bit/8-way mux.
+DMux4Way - 4-way demultiplexor.
+DMux8Way - 8-way demultiplexor.
+
+Remarks
+-------
+It was fun!

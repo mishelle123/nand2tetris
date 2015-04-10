@@ -1,0 +1,30 @@
+mishelle, jjgold
+
+
+                           Project 5 - A tar File
+                           ----------------------- 
+  
+
+Submitted Files
+---------------
+README - This file.
+Memory.hdl - When a key is pressed, the program blackens the screen
+CPU.hdl - The Hack CPU
+Computer.hdl - The platform's top-most chip
+ExtendAlu.hdl - extends ALU 
+CpuMul.hdl - This chip is an extension of the book CPU by using the extended ALU.
+Decode.hdl - Decode the instruction
+Findlsb.hdl - finds lsb
+Findmsb.hdl - finds msb
+ParseInst.hdl - parse the instruction
+PCload.hdl
+Mul.hdl
+MulHelper.hdl
+shiftLeft.hdl
+shiftRight.hdl
+
+
+
+Remarks
+-------
+It was fun!

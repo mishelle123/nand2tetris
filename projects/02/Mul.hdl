@@ -1,0 +1,73 @@
+CHIP Mul
+{
+    IN a[16], b[16];
+    
+    OUT out[16];
+
+    
+
+    PARTS:
+    MulHelper(a=a, b=b, out1=devidea1, out2=mulb1, lsb=lsb1);
+    Mux16(a=false, b=b, sel=lsb1, out=result1);
+    
+    MulHelper(a=devidea1, b=mulb1, out1=devidea2, out2=mulb2, lsb=lsb2);
+    Mux16(a=false, b=mulb1, sel=lsb2, out=result2);
+    Add16(a=result1, b=result2, out=sum1); //add the result to sum
+    
+    MulHelper(a=devidea2, b=mulb2, out1=devidea3, out2=mulb3, lsb=lsb3);
+    Mux16(a=false, b=mulb2, sel=lsb3, out=result3);
+    Add16(a=sum1, b=result3, out=sum2);
+	
+	MulHelper(a=devidea3, b=mulb3, out1=devidea4, out2=mulb4, lsb=lsb4);
+    Mux16(a=false, b=mulb3, sel=lsb4, out=result4);
+    Add16(a=sum2, b=result4, out=sum3);
+    
+    MulHelper(a=devidea4, b=mulb4, out1=devidea5, out2=mulb5, lsb=lsb5);
+    Mux16(a=false, b=mulb4, sel=lsb5, out=result5);
+    Add16(a=sum3, b=result5, out=sum4);
+    
+    MulHelper(a=devidea5, b=mulb5, out1=devidea6, out2=mulb6, lsb=lsb6);
+    Mux16(a=false, b=mulb5, sel=lsb6, out=result6);
+    Add16(a=sum4, b=result6, out=sum5);
+    
+    MulHelper(a=devidea6, b=mulb6, out1=devidea7, out2=mulb7, lsb=lsb7);
+    Mux16(a=false, b=mulb6, sel=lsb7, out=result7);
+    Add16(a=sum5, b=result7, out=sum6);
+    
+    MulHelper(a=devidea7, b=mulb7, out1=devidea8, out2=mulb8, lsb=lsb8);
+    Mux16(a=false, b=mulb7, sel=lsb8, out=result8);
+    Add16(a=sum6, b=result8, out=sum7);
+    
+    MulHelper(a=devidea8, b=mulb8, out1=devidea9, out2=mulb9, lsb=lsb9);
+    Mux16(a=false, b=mulb8, sel=lsb9, out=result9);
+    Add16(a=sum7, b=result9, out=sum8);
+    
+    MulHelper(a=devidea9, b=mulb9, out1=devidea10, out2=mulb10, lsb=lsb10);
+    Mux16(a=false, b=mulb9, sel=lsb10, out=result10);
+    Add16(a=sum8, b=result10, out=sum9);
+    
+    MulHelper(a=devidea10, b=mulb10, out1=devidea11, out2=mulb11, lsb=lsb11);
+    Mux16(a=false, b=mulb10, sel=lsb11, out=result11);
+    Add16(a=sum9, b=result11, out=sum10);
+    
+    MulHelper(a=devidea11, b=mulb11, out1=devidea12, out2=mulb12, lsb=lsb12);
+    Mux16(a=false, b=mulb11, sel=lsb12, out=result12);
+    Add16(a=sum10, b=result12, out=sum11);
+    
+    MulHelper(a=devidea12, b=mulb12, out1=devidea13, out2=mulb13, lsb=lsb13);
+    Mux16(a=false, b=mulb12, sel=lsb13, out=result13);
+    Add16(a=sum11, b=result13, out=sum12);
+    
+    MulHelper(a=devidea13, b=mulb13, out1=devidea14, out2=mulb14, lsb=lsb14);
+    Mux16(a=false, b=mulb13, sel=lsb14, out=result14);
+    Add16(a=sum12, b=result14, out=sum13);
+    
+    MulHelper(a=devidea14, b=mulb14, out1=devidea15, out2=mulb15, lsb=lsb15);
+    Mux16(a=false, b=mulb14, sel=lsb15, out=result15);
+    Add16(a=sum13, b=result15, out=sum14);
+    
+    MulHelper(a=devidea15, b=mulb15, out1=devidea16, out2=mulb16, lsb=lsb16);
+    Mux16(a=false, b=mulb15, sel=lsb16, out=result16);
+    Add16(a=sum14, b=result16, out=out);
+
+}

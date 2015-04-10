@@ -1,0 +1,26 @@
+mishelle, jjgold
+
+
+                           Project 6 - A tar File
+                           ----------------------- 
+  
+
+Submitted Files
+---------------
+README - This file.
+Makefile - run the comman 'make' in the shell
+Assembler - after running make command enter command 'Assembler <path>' in shell
+Code.py - convert from assembly to binary
+Parser.py - parse the file
+SymbolTable.py - create symbols and predefined values
+assembler.py - create a binary file (hack file)
+main.py - runs the program
+
+usuage
+-------
+run the command 'make' in the shell
+after running 'make' command, enter command 'Assembler <path>'
+
+Remarks
+-------
+It was fun!

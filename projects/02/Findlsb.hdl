@@ -1,0 +1,11 @@
+/** 
+ * Findlsb. find the lsb.
+ */
+
+CHIP Findlsb {
+    IN a[16];
+    OUT out;
+
+    PARTS:
+    And(a=a[0], b=true, out=out);
+}

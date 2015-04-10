@@ -1,0 +1,16 @@
+
+/**
+ * 16 bit multiply helper
+ */
+
+CHIP MulHelper {
+    IN a[16], b[16], sel;
+    OUT out1[16], out2[16], lsb;
+
+    PARTS:
+    Findlsb(a=a, out=lsb);
+	ShiftRight(in=a, out=out1); //devide a
+	ShiftLeft(in=b, out=out2); //multiply b
+
+}
+

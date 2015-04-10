@@ -1,0 +1,14 @@
+
+/**
+ * sets the input of x and y to 0's and negate if needed.
+ */
+
+CHIP Input16 {
+    IN a[16], z, n;
+    OUT out[16];
+
+    PARTS:
+    Mux16(a=a, b[0..15]=false, sel=z, out=outz); //sets a to zeros if z=1
+    Not16(in=outz, out=outn);
+    Mux16(a=outz, b=outn, sel=n, out=out); //negate a if n=1
+}
