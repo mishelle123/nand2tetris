@@ -1,0 +1,28 @@
+mishelle, jjgold
+=================================================================
+Mishelle Fried, ID 304844517, mishelle.friedgornu@mail.huji.ac.il
+Yaacov Goldberger, ID 303032510, j.j.goldberger@gmail.com
+=================================================================
+
+                           Project 7 - A tar File
+                           ----------------------- 
+  
+
+Submitted Files
+---------------
+README - This file.
+Makefile - run the command 'make' in the shell
+Translator - after running make command enter command 'Translator <path>' in shell
+CodeWriter.py - convert from vm language to assembly
+Parser.py - parse the file
+Translator.py - create an asm file (assembly file)
+main.py - runs the program
+
+usuage
+-------
+run the command 'make' in the shell
+after running 'make' command, enter command 'Assembler <path>'
+
+Remarks
+-------
+It was fun!
